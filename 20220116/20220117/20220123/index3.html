@@ -76,10 +76,6 @@
                 color: grey;
                 font-size: 1rem;
             }
-            aside {
-                width: 33.33%;
-                float: left;
-            }
             span {
                 color: white;
             }
@@ -102,6 +98,16 @@
             }
             aside {
                 font-size: 1.25rem;
+                padding-left: 2rem;
+                margin-left: 3%;
+                width: 30.33%;
+                float: left;
+                border-left-width: 3px;
+                border-left-style: solid;
+                border-image: 
+                linear-gradient(
+                white, grey, white
+                ) 1 100%;           
             }
             .capitalise {
                 text-transform: capitalize;
@@ -115,9 +121,70 @@
                 border: 0.0625rem solid rgba(185, 184, 184, 0.616);
                 color: rgb(68, 68, 163);
                 text-transform: capitalize;
+                font-weight: bolder;
                 width: 100%;
                 padding: 0%;
                 height: 3rem;
+                vertical-align: middle; 
+                padding-top: 0.75rem;
+                background-image: url(./images/Plius.png);
+                background-repeat: no-repeat;
+                background-size: 2rem;
+                background-position: 2vw;
+                padding-left: 5rem;
+                }
+            .button:hover {
+                background-color: white;
+                background-image: url(./images/Minus.png);
+                background-repeat: no-repeat;
+
+            }
+            .button:last-child {
+                margin-bottom: 1rem;
+            }
+            a {
+                text-transform: capitalize;
+            }
+            .chat-bubble {
+                position: relative;
+                font-size: 1rem;
+                background: rgba(185, 184, 184, 0.616);
+                color: rgb(95, 89, 89);
+                border-radius: 10px;
+                width: 100%;
+                padding: 1rem;
+            }
+            .chat-bubble::before {
+                position: absolute;
+                bottom: -20px;
+                left: 75%;
+                content: "";
+                border: 20px solid transparent;
+                border-top-color: rgba(185, 184, 184, 0.616);
+                border-bottom: 0;
+            }
+            .span-1 {
+                color: rgb(95, 89, 89);
+                width: 100%;
+                font-size: 2rem;
+                position: absolute;
+                top: 10;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .span-2 {
+                color: rgb(95, 89, 89);
+                width: 100%;
+                font-size: 2rem;
+                position: absolute;
+                left: 80%;
+                bottom: -10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+            }
+            @media screen (display: portrait) {
+             .chat-bubble {
+                 display: none;
+             }   
             }
         </style>
     </head>
@@ -167,16 +234,38 @@
         <aside>
             <div class="col-12">
                 <h1 class="capitalise text-align"> &#128269 more about HBCWeb...</h1>
-                <div class="button">company overview</div>
-                <div class="button">meet the teams</div>
-                <div class="button">the digs</div>
-                <div class="button">the Priceline PN</div>
-                <div class="button">client testimonials</div>
+                <div class="button">
+                    <div> <a href="#">company overview</a></div>
+                </div>
+                <div class="button">
+                    <div> <a href="#">meet the teams</a></div>
+                </div>
+                <div class="button">
+                    <div> <a href="#">the digs</a></div>
+                </div>
+                <div class="button">
+                    <div> <a href="#">the Priceline PN</a></div>
+                </div>
+                <div class="button">
+                    <div> <a href="#">client testimonials</a></div>
+                </div>
             </div>
-            <div class="">
 
-            </div>
-           
+
+
+            <div class="col-12">
+                <h1 class="capitalise text-align">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    </svg> what our clients are saying...
+                </h1>
+                <div class="chat-bubble">
+                    <span class="span-1">"</span><br>
+                    While building my business, I could not have imagined how outial a website would posibly be. I did my research and recieved.<br>
+                    <span class="span-2">"</span>
+                </div>
+                <div class="col-8"> <a href="#">view all client testimonials</a></div>
+            </div>           
         </aside>       
     </body>
 </html>
