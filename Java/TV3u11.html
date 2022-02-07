@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>TV3</title>
+<meta charset="UTF-8">
+<meta name="viewport" width="width-device-width, 
+initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+
+
+            function Laikas (v1, m1, m2, v, m) {
+                let bmin = m1 + m2;
+                let bv = Math.floor (bmin / 60);
+                let am = bmin % 60;
+                let av = v1 + bv;
+                if (av >= v) {
+                    if (m < m1 + am) {
+                    console.log("Petras į pamoką pavėluos");
+                    }
+                }
+                else {
+                    console.log("Petras į pamoką nepavėluos");
+                }
+            }
+
+        Laikas (8, 29, 43, 9, 5)
+        Laikas (8, 29, 23, 9, 5)
+
+        </script>
+    </body>
+
+</html>

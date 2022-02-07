@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TV2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="width-device-width,
+    initial-scale=1.0">
+    <style>
+        
+    </style> 
+    <script>
+        function article(aName, aNav, aText, aBottom){
+            let artName = "\t<h1>" + aName + "</h1>\n";
+            let artNav = "\t<p>" + aNav + "</p>\n";
+            let artText = "\t<p>" + aText + "</p>\n";
+            let artBottom = "\t<p>" + aBottom + "</p>\n";
+            document.getElementById("container").innerHTML += div;
+        }
+        function styleDiv(id, brdColor, bgColor){
+            let artStyle = document.getElementById(id).style;
+            artStyle.padding = "10px";
+            artStyle.borderLeft = "2px solid lightgrey";
+            atStyle.backgroundColor = bgColor + "";
+            artStyle.marginLeft = "10px";
+        }
+    </script>
+
+</head>
+<body id="body">
+    <div id="container">
+       
+    </div>
+    <script>
+        let aName = "C-SPAN ranks presidents: Abe still on top, new shocker at the bottom <a href=">>"></a>";
+        article();
+    </script>
+</body>
+</html>
