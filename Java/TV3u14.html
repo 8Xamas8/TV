@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>TV3</title>
+<meta charset="UTF-8">
+<meta name="viewport" width="width-device-width, 
+initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+
+            function Numeris(a, b, c) {
+                let d = (b*b)-(4*a*c);
+                let x1 = (-b + Math.sqrt(d))/(2*a);
+                let x2 = (-b - Math.sqrt(d))/(2*a);
+                    if(d==0){
+                        console.log = ("vienas sprendinys " + x1);
+                    }
+                    else if(d>0){
+                        console.log = ("du sprendiniai " + x1 + ", " + x2);
+                    }
+                    else {
+                    console.log = ("nėra sprendinių");
+                    }
+            }
+
+        Numeris (1, 2, 1)
+        Numeris (1, 4, 3)
+        Numeris (1, 3, 4)
+        </script>
+    </body>
+
+</html>
